@@ -8,9 +8,11 @@
     font-weight: 400;
     font-style: normal;
 }
+
 html {
-    font-size: 16px; /* This means 1rem = 16px */
-  }
+    font-size: 16px;
+    /* This means 1rem = 16px */
+}
 
 /*Shared styles*/
 * {
@@ -23,39 +25,50 @@ html {
     display: flex;
 }
 
-.section-content-text{
+.section-content-text {
     color: rgba(255, 255, 255, 0.5);
     font-size: 16px;
 
 }
 
-.btn-primary{
+.bg-primary {
+
+    background-color: rgb(17, 17, 17);
+
+}
+.text-align-center{
+    text-align: center;
+}
+.section-title {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+
+}
+
+.btn-primary {
     padding: 16px 40px 16px 40px;
     border-radius: 42px;
-background-color: rgb(230, 83, 60);
-font-size: 16px;
-font-weight: 600;
-color: white;
-border: none;
+    background-color: rgb(230, 83, 60);
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border: none;
 }
 
-.btn-secondary{
-border: 1px solid rgb(255, 255, 255);
-border-radius: 42px;
-padding: 16px 40px 16px 40px;
-font-size: 16px;
-font-weight: 600;
-background-color: black;
-color: white;
+.btn-secondary {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+    padding: 16px 40px 16px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
 
 }
 
-/*Header style*/
-.header {
-    
-    background-color: rgb(17, 17, 17);
-  
-}
+
+
 
 /*nav-bar styles*/
 .nav {
@@ -71,14 +84,17 @@ color: white;
 .nav-item {
     list-style: none;
 }
-#ham-bar{
+
+#ham-bar {
     display: none;
     margin-right: 20px;
 }
-.fa-bars{
+
+.fa-bars {
     font-size: 30px;
     color: white;
 }
+
 .nav-link {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -95,41 +111,50 @@ color: white;
 
 }
 
-.nav-link-1{
+.nav-link-1 {
     border-radius: 46px;
     padding: 8px 20px 8px 20px;
-    background-color: rgb(230, 83, 60);;
+    background-color: rgb(230, 83, 60);
+    ;
 }
-.hero-section,.nav {
+
+.hero-section,
+.nav {
     max-width: 1160px;
     margin: 0 auto;
 }
 
 /*Hero Section styles*/
 
-.hero-section-title{
+.hero-section-title {
     color: rgb(255, 255, 255);
     font-size: 4.8rem;
     font-weight: 900;
- 
+
 }
-#cursive-text{
+
+#cursive-text {
     font-family: cursive;
 }
-.hero-section{
+
+.hero-section {
     justify-content: space-between;
 }
-.hero-section-content{
+
+.hero-section-content {
     flex-direction: column;
     gap: 28px;
+    width: 50%;
 
 
 }
-.hero-section-image{
+
+.hero-section-image {
     position: relative;
-   
+
 }
-.card{
+
+.card {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     background: rgba(48, 48, 48, 0.54);
@@ -141,85 +166,148 @@ color: white;
     gap: 10px;
 
 }
-.btn{
+
+.btn {
     gap: 10px;
 }
-.card-1{
-position: absolute;
-left: -113px;
-bottom: 63px;
+
+.card-1 {
+    position: absolute;
+    left: -113px;
+    bottom: 63px;
 
 }
-.card-2{
-position: absolute;
-bottom: 357px;
-left: 254px;
+
+.card-2 {
+    position: absolute;
+    bottom: 357px;
+    left: 254px;
 }
+
 .triangle-right {
-	width: 0;
-	height: 0;
-	border-top: 9px solid transparent;
-	border-left: 18px solid white;
-	border-bottom: 9px solid transparent;
+    width: 0;
+    height: 0;
+    border-top: 9px solid transparent;
+    border-left: 18px solid white;
+    border-bottom: 9px solid transparent;
     position: absolute;
     bottom: 102px;
     left: -71px;
     cursor: pointer;
 }
-.card-title{
+
+.card-title {
     color: rgb(250, 250, 249);
-font-weight: 900;
+    font-weight: 900;
 
 }
-.circle{
+
+.circle {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background: rgb(230, 83, 60);
-    
+
 }
-.card-content{
+
+.card-content {
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
-#large-card-title{
+
+#large-card-title {
     font-size: 2.5rem;
 }
-.imgResponsive{
+
+.imgResponsive {
     width: 100%;
 }
 
+/* Change your habbit section styles start from here  */
+.change-habbit{
+    max-width: 1044px;
+    margin: 100px auto;
+}
+.change-habbit-content-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+.change-habbit-card-title{
+    color: rgb(255, 255, 255);
+font-size: 18px;
+font-weight: 600;
+}
+.circle-img{
+    border-radius: 50%;
+}
+.change-habbit-card{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 231px;
+}
+.change-habbit-card-layout{
+    gap: 20px;
+}
+
+
 @media screen and (max-width:576px) {
+    /*Header responsive*/
+
     html {
-        font-size: 10px; /* This means 1rem = 16px */
-      }
-      .nav{
-        margin-left: 25px;
-      }
-    .nav-item{
-    display: none;
+        font-size: 10px;
     }
-    .hero-section{
+
+    .nav {
+        margin-left: 25px;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .hero-section {
         flex-direction: column;
         margin-left: 25px;
-      
     }
-    
- 
-    .card-1{
+
+.hero-section-content{
+    width: 100%;
+}
+
+    .card-1 {
         left: 10px;
     }
-    .card-2{
+
+    .card-2 {
         left: 160px;
     }
-    .section-content-text{
+
+    .section-content-text {
         font-size: 14px;
     }
-    #ham-bar{
+
+    #ham-bar {
         display: block;
     }
+    /*Change your habits section*/
+
+    .change-habbit-card-layout{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .change-habbit{
+  
+        margin: 0px auto;
+    }
+   
 
 
 }
-
