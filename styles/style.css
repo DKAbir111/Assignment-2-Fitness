@@ -254,6 +254,33 @@ font-weight: 600;
 .change-habbit-card-layout{
     gap: 20px;
 }
+/* Run extra mile easily section  styles start from here */
+
+.run-section{
+    max-width:1060px;
+  margin: 0 auto;
+  background: rgb(34, 34, 34);
+  padding: 40px;
+  border-radius: 18px;
+  justify-content: space-between;
+  gap: 20px;
+}
+.run-section-content{
+    width: 443px;
+    flex-direction: column;
+    gap: 34px;
+    justify-content: center;
+}
+.run-section-img{
+    display: flex;
+    justify-content: center;
+}
+.run-img{
+    width: 366px;
+    height: 312px;
+    border-radius: 18px;
+ 
+}
 
 
 @media screen and (max-width:576px) {
@@ -307,7 +334,21 @@ font-weight: 600;
   
         margin: 0px auto;
     }
-   
+
+    /*Run section*/
+    .run-section{
+        flex-direction: column;
+        margin: 50px 20px;
+       
+    }
+    .run-section-content{
+      width: 100%;
+      align-items: center;
+    }
+    .run-img{
+        width: 287px;
+height: 170px;
+    }
 
 
 }
