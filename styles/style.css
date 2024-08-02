@@ -32,7 +32,6 @@ html {
 }
 
 .bg-primary {
-
     background-color: rgb(17, 17, 17);
 
 }
@@ -200,7 +199,7 @@ font-weight: 900;
     border-bottom: 9px solid transparent;
     position: absolute;
     bottom: 102px;
-    left: -71px;
+    left: -66px;
     cursor: pointer;
 }
 
@@ -230,6 +229,7 @@ font-weight: 900;
 
 .imgResponsive {
     width: 100%;
+    height: 100%;
 }
 
 /* Change your habbit section styles start from here  */
@@ -290,9 +290,91 @@ font-weight: 600;
     border-radius: 18px;
  
 }
+/*training and exercise section style start from here*/
+.training-exercise-container{
+    max-width: 1060px;
+    margin: 88px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+}
+.training-img-1{
+    grid-area: training-img-1;
+   background-image: url(../images/exercise1.jpg);
+   background-color: rgba(6, 255, 210, 0.5);
+   background-blend-mode: overlay;
 
+   
+}
+.training-img-2{
+    grid-area: training-img-2;
+    background-image: url(../images/exercise2.png);
+    background-color: rgba(255, 0, 0, 0.3);
+    background-blend-mode: overlay;
+}
+.training-img-3{
+    grid-area: training-img-3;
+    background-image: url(../images/exercise3.png);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    
+}
+.training-img-4{
+    grid-area: training-img-4;
+    background-image: url(../images/exercise4.png);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+.training-img-5{
+    grid-area: training-img-5;
+    background-image: url(../images/exercise5.jpg);
+    background-color: rgba(66, 255, 0, 0.3);
+    background-blend-mode: overlay;
+}
+.training-img-6{
+    grid-area: training-img-6;
+    background-image: url(../images/exercise6.jpg);
+    background-color: rgba(0, 71, 255, 0.3);
+    background-blend-mode: overlay;
+}
+.training-img-container{
+    display: grid;
+    grid-template-areas: 
+    "training-img-1 training-img-2 training-img-2 training-img-2 training-img-3"
+    "training-img-4 training-img-4 training-img-5 training-img-6 training-img-6"
+    ;
+}
+.exercise-card{
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.training-content-text{
+    width: 176px;
+    color: white;
+    margin-top: 150px;
+    margin-left: 15px;
+}
+.training-content-text-4{
+    color: white;
+    width: 176px;
+    position: relative;
+    top: 15px;
+    left: 200px;
+}
+.training-content-text-2{
+    color: white;
+    width: 176px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+#training-content-text-1{
+color: black;
+}
 /* BMI calculator section style start from here  */
-
 .bmi-content {
     max-width: 1060px;
     margin: 0 auto;
@@ -349,6 +431,7 @@ input, select {
     padding: 50px 0;
     width: 100%;
     background-color: rgb(34, 34, 34);
+
 }
 
 .bmi-container {
@@ -356,6 +439,7 @@ input, select {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 88px;
 }
 
 .bmi-content-text {
@@ -387,6 +471,11 @@ input, select {
     font-size: 20px;
 font-weight: 700;
 color: white;
+ }
+ .meet-our-team-text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
  }
  .meet-our-team-card-layout{
     max-width: 1060px;
@@ -485,7 +574,7 @@ font-weight: 400;
     }
 
     .nav {
-        margin-left: 25px;
+        padding: 10px;
     }
 
     .nav-item {
@@ -494,11 +583,12 @@ font-weight: 400;
 
     .hero-section {
         flex-direction: column;
-        margin-left: 25px;
+        padding: 10px;
     }
 
 .hero-section-content{
     width: 100%;
+   
 }
 
     .card-1 {
@@ -543,6 +633,21 @@ font-weight: 400;
         width: 287px;
 height: 170px;
     }
+
+    /*training and exercise*/
+    .training-img-container{
+        grid-template-areas: 
+        "training-img-1 training-img-2"
+        "training-img-3 training-img-4" 
+        ;
+    }
+    .training-img-6,.training-img-5{
+        display: none;
+    }
+    .training-content-text-4{
+       
+        margin-left: -180px;
+    }
     /*BMI Content*/
 
     .bmi-content {
@@ -561,6 +666,7 @@ height: 170px;
     grid-template-columns: repeat(1,1fr);
     
 }
+/*Footer section*/
 .footer-top{
     flex-direction: column;
 }
