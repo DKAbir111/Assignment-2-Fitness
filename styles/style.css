@@ -377,6 +377,44 @@ input, select {
 }
 
  /* Meet our team section  style start from here  */
+.meet-our-team{
+    margin-top: 88px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+ .trainer-card-title{
+    font-size: 20px;
+font-weight: 700;
+color: white;
+ }
+ .meet-our-team-card-layout{
+    max-width: 1060px;
+    margin: 0 auto;
+    border-radius: 18px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 20px;
+
+   
+ }
+ .meet-out-team-card{
+    position: relative;
+
+ }
+ .card-content-container{
+  position: absolute;
+   bottom: 20px;
+   left: 20px;
+
+ }
+ .team-card{
+    height: 272px;
+    border-radius: 18px;
+    
+}
+
 
 
 @media screen and (max-width:576px) {
@@ -458,5 +496,9 @@ height: 170px;
         width: 100%
     }
 
-
+/*Meet our team*/
+.meet-our-team-card-layout{
+    grid-template-columns: repeat(1,1fr);
+    
+}
 }
