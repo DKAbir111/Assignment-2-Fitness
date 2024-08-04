@@ -537,17 +537,17 @@ select {
     height: 400px;
     top: 300px;
 }
+.food-card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .food-card-img img {
     height: 140px;
     width: 140px;
     position: absolute;
     bottom: 170px;
-    left: 30px;
-
-
-
-
 
 }
 
@@ -846,14 +846,15 @@ hr {
     .food-card {
         width: 80%;
         margin: 0 auto;
+
     }
+  
 
     .food-card-img img {
         height: 150px;
         width: 150px;
-        position: absolute;
         
-        left: 70px;
+      
        
     }
 
