@@ -201,6 +201,8 @@
                         <div>
                             <button class="btn-primary">Calculate</button>
                         </div>
+                        <!-- BMI result will be shown here -->
+                        <div class="bmi-result-container"></div>
                     </div>
                 </div>
             </div>
@@ -398,6 +400,56 @@
         <p class="section-content-text text-align-center" id="copy-right">All right reserved @Fitness 2024</p>
 
     </footer>
+
+      <script>
+
+
+// BMI Calculator
+const calculateButton = document.querySelector('.bmi-calculator button');
+const bmiResultContainer = document.querySelector('.bmi-result-container');
+
+calculateButton.addEventListener('click', () => {
+    // Get input values
+    const height = parseFloat(document.querySelector('input[placeholder="Height/cm"]').value);
+    const weight = parseFloat(document.querySelector('input[placeholder="Weight/kg"]').value);
+
+    // Calculate BMI
+    if (!isNaN(height) && !isNaN(weight) && height > 0 && weight > 0) {
+        const heightInMeters = height / 100; // Convert cm to meters
+        const bmi = (weight / (heightInMeters ** 2)).toFixed(2); // BMI formula
+
+        // Determine weight status
+        let status;
+        if (bmi < 18.5) {
+            status = 'Underweight';
+        } else if (bmi >= 18.5 && bmi <= 24.9) {
+            status = 'Healthy';
+        } else if (bmi >= 25 && bmi <= 29.9) {
+            status = 'Overweight';
+        } else {
+            status = 'Obese';
+        }
+
+        // Display result
+        bmiResultContainer.innerHTML = `<p style="color: #E6533C">Your BMI is <strong>${bmi}</strong> (${status})</p>`;
+    } else {
+        bmiResultContainer.innerHTML = '<p style="color: #E6533C">Please enter valid height and weight.</p>';
+    } 
+});
+
+// Button click handlers
+const joinClubButton = document.querySelector('.btn-primary');
+const downloadAppButton = document.querySelector('.btn-secondary');
+
+joinClubButton.addEventListener('click', () => {
+    alert('Join Club Now button clicked!');
+});
+
+downloadAppButton.addEventListener('click', () => {
+    alert('Download App button clicked!');
+});
+
+      </script> 
 </body>
 
 </html>
